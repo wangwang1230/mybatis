@@ -21,7 +21,7 @@ public class Test {
 		SqlSession openSession=sqlSessionFactory.openSession();
 		//4. 定义执行sql标示字符串    namespace.方法名
 		String statement="com.test.entity.userMapper.getUser";
-		User user= openSession.selectOne(statement,1);
+		User user= openSession.selectOne(statement,2);
 		System.out.println(user.getName());
 	}
 
